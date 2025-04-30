@@ -14,9 +14,10 @@ const K = {
           path: "/service"
         },
         {
-          name: 'contact',
-          path: '/contact'
+          name: 'marketsector',
+          path: "/marketsector"
         },
+       
   ],
 };
 export default K ;

@@ -1,18 +1,52 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/images/logo.jpeg";
+import { NavLink } from "react-router-dom";
+import {  useLocation, useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
+
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (href) => {
+    if (href === "/") {
+      navigate("/");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (href.startsWith("/#")) {
+      const target = href.split("#")[1];
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          scroller.scrollTo(target, {
+            duration: 800,
+            smooth: "easeInOutQuart"
+          });
+        }, 100);
+      } else {
+        scroller.scrollTo(target, {
+          duration: 800,
+          smooth: "easeInOutQuart"
+        });
+      }
+    } else {
+      navigate(href);
+    }
+  };
+  
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Market Sectors", href: "#sectors" },
-    { name: "Partners", href: "#partners" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/service" },
+    { name: "Market Sectors", href: "/marketSector" },
+    {name:   'Partners', href: '/#partners'},
+    {name: 'contact', href: '/#contact' }
+    
   ];
 
   useEffect(() => {
@@ -49,13 +83,27 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-white hover:text-[#0A33E3] transition duration-300"
-            >
-              {link.name}
-            </a>
+
+            <button
+             key={link.name}
+                onClick={() => {
+                     handleNavClick(link.href);
+                     setIsOpen(false); // also closes mobile menu if open
+                    }}
+                     className="relative group text-white hover:text-[#0A33E3] transition"
+                        >
+                   <span className="relative z-10">{link.name}</span>
+                   <span
+                       className="absolute left-0 -bottom-1 h-[2px] w-full bg-[#0A33E3] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                       />
+                  </button>
+
+           
+             
+                   
+            
+            
+            
           ))}
         </nav>
 
@@ -72,15 +120,23 @@ const Navbar = () => {
         <div className="md:hidden bg-black/90 backdrop-blur-md px-6 pt-4 pb-6">
           <nav className="flex flex-col space-y-4">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-white hover:text-[#0A33E3] transition"
-              >
-                {link.name}
-              </a>
-            ))}
+              <button
+              key={link.name}
+              onClick={() => {
+                handleNavClick(link.href);
+                setIsOpen(false); // also closes mobile menu if open
+              }}
+              className="relative group text-white hover:text-[#0A33E3] transition"
+            >
+              <span className="relative z-10">{link.name}</span>
+              <span
+                className="absolute left-0 -bottom-1 h-[2px] w-full bg-[#0A33E3] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+              />
+            </button>
+            
+            
+              
+              ))}
           </nav>
         </div>
       )}

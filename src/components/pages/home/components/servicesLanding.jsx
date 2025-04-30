@@ -56,7 +56,7 @@ const Services = () => {
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         {/* Title Animation */}
         <motion.h2
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-10"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#AAF1FF] mb-10"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 3, ease: 'easeOut' }}
@@ -69,12 +69,12 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="border border-[#3F4576] rounded-xl p-6 text-left hover:shadow-xl transition duration-300 backdrop-blur-sm bg-white/10"
+              className="border border-[#EFEDCE] rounded-xl p-6 text-left hover:shadow-xl transition duration-300 backdrop-blur-sm bg-white/10"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 3, delay: index * 0.2, ease: 'easeOut' }}
             >
-              <div className="mb-2 text-[#0A33E3]">
+              <div className="mb-2 text-[#0B5FB0]">
                 {service.icon}
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">{service.title}</h3>

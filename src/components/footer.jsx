@@ -19,7 +19,7 @@ const fadeInUp = {
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#1447E6] text-white py-12 px-4 overflow-hidden">
+    <footer className="relative bg-[#EBFCFF] text-white py-12 px-4 overflow-hidden">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30 z-0"></div>
 
@@ -35,15 +35,15 @@ const Footer = () => {
             <img src={logo} alt="logo" className="size-11 rounded-full" />
             Threshold Africa.
           </div>
-          <p className="text-sm text-white/80 mt-3">
+          <p className="text-shadow-md text-white/80 mt-3 font-thin">
             Reliable logistics and supply chain services across West Africa.
           </p>
         </motion.div>
 
         {/* Column 2: Navigation */}
         <motion.div variants={fadeInUp} custom={2}>
-          <h4 className="font-semibold mb-4 text-lg">Quick Links</h4>
-          <ul className="space-y-2 text-sm">
+          <h4 className="font-semibold mb-4 text-lg text-white">Quick Links</h4>
+          <ul className="space-y-2  text-shadow-md font-thin">
             <li><a href="#about" className="hover:underline">About Us</a></li>
             <li><a href="#services" className="hover:underline">Services</a></li>
             <li><a href="#sectors" className="hover:underline">Market Sectors</a></li>
@@ -54,16 +54,16 @@ const Footer = () => {
 
         {/* Column 3: Contact */}
         <motion.div variants={fadeInUp} custom={3}>
-          <h4 className="font-semibold mb-4 text-lg">Contact</h4>
-          <p className="text-sm">3rd Floor Springfield Building, Tema, Ghana</p>
-          <p className="text-sm mt-2">+233 20 921 9910</p>
-          <p className="text-sm">thresholdafrica.gh@outlook.com</p>
+          <h4 className="font-semibold mb-4 text-lg text-white">Contact</h4>
+          <p className="text-shadow-md font-thin">3rd Floor Springfield Building, Tema, Ghana</p>
+          <p className="text-shadow-md font-thin mt-2">+233 20 921 9910</p>
+          <p className="text-shadow-md font-thin">thresholdafrica.gh@outlook.com</p>
         </motion.div>
       </motion.div>
 
       {/* Divider */}
       <motion.div
-        className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-white/70 relative z-10"
+        className="border-t border-white/20 mt-10 pt-6 text-center text-shadow-md text-white/70 relative z-10"
         variants={fadeInUp}
         custom={4}
         initial="hidden"

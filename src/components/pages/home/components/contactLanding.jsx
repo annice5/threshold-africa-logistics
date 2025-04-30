@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import contact from '../../../../assets/images/contact.png';
+import { Element } from 'react-scroll';
 
 // Animation variants
 const fadeInUp = {
@@ -19,7 +20,8 @@ const fadeInUp = {
 
 const ContactLanding = () => {
   return (
-    <section
+    <Element name = 'contact'>
+      <section
       id="contact"
       className="relative bg-cover bg-center bg-no-repeat py-16 sm:py-20 px-4 sm:px-6 lg:px-8"
       style={{
@@ -69,7 +71,7 @@ const ContactLanding = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md transition duration-300"
+              className="bg-[#2BA3EC] hover:bg-[#0A33E3] text-white font-semibold px-6 py-2 rounded-md transition duration-300"
             >
               Send Message
             </button>
@@ -82,7 +84,7 @@ const ContactLanding = () => {
           variants={fadeInUp}
           custom={2}
         >
-          <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-white">Contact Details</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-[#AAF1FF]">Contact Details</h3>
           <p className="mb-4">
             We are available to respond to your inquiries, requests, and collaboration opportunities.
           </p>
@@ -101,6 +103,7 @@ const ContactLanding = () => {
         </motion.div>
       </motion.div>
     </section>
+    </Element>
   );
 };
 

@@ -5,6 +5,8 @@ import About from "./components/pages/about"
 import Service from "./components/pages/service"
 import Contact from "./components/pages/contact"
 import Home from "./components/pages/home"
+import MarketSector from "./components/pages/marketSector"
+import Partners from "./components/pages/partners"
 
 
 
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
               {
                 path: 'service',
                 element: <Service/>
+              },
+              {
+                path: 'marketsector',
+                element: <MarketSector/>
+              },
+              {
+                path: 'partners',
+                element: <Partners/>
               },
               {
                 path: 'contact',

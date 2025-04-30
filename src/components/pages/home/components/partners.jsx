@@ -1,6 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { motion } from 'framer-motion';
+import { Element } from 'react-scroll';
 import ecgLogo from '../../../../assets/images/ecgLogo.png';
 import ildo from '../../../../assets/images/ildo.png';
 import jse from '../../../../assets/images/jse.png';
@@ -10,6 +11,7 @@ const logos = [ecgLogo, ildo, jse];
 
 const Partners = () => {
   return (
+    <Element name='partners'>
     <section
       id="partners"
       className="relative bg-cover bg-center bg-no-repeat py-16 sm:py-20 px-4 sm:px-6 lg:px-8"
@@ -60,6 +62,7 @@ const Partners = () => {
         </Marquee>
       </div>
     </section>
+    </Element>
   );
 };
 

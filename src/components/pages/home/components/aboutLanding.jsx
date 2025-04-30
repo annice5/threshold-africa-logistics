@@ -37,7 +37,7 @@ const AboutLanding = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 3, ease: 'easeOut' }}
         >
-          <div className="p-6 sm:p-8 md:p-10 max-w-xl text-white">
+          <div className="p-6 sm:p-8 md:p-10 max-w-xl text-[#AAF1FF]">
             <motion.h2
               className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
               initial={{ opacity: 0, y: -20 }}

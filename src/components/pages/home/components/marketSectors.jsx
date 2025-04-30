@@ -45,7 +45,7 @@ const MarketSectors = () => {
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         {/* Title Animation */}
         <motion.h2
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-12"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#AAF1FF] mb-12"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
@@ -57,12 +57,12 @@ const MarketSectors = () => {
           {sectors.map((sector, index) => (
             <motion.div
               key={index}
-              className="backdrop-blur-md bg-white/5 border border-transparent hover:border-[#0A33E3] p-6 rounded-2xl text-white flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="backdrop-blur-md bg-white/5 border border-transparent hover:border-[#EBFCFF] p-6 rounded-2xl text-white flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-lg"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2, ease: 'easeOut' }}
             >
-              <div className="mb-4 bg-gradient-to-tr from-[#40457C] to-[#0A33E3] rounded-full p-4">
+              <div className="mb-4 bg-gradient-to-tr from-[#EFEDCE] to-[#0B5FB0] rounded-full p-4">
                 {React.cloneElement(sector.icon, { className: 'h-6 w-6 text-white' })}
               </div>
               <h3 className="text-base sm:text-lg font-semibold">{sector.title}</h3>

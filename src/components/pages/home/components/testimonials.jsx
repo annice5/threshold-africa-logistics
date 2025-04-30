@@ -74,7 +74,7 @@ const Testimonials = () => {
       >
         {/* Heading */}
         <motion.h2
-          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#AAF1FF]"
           variants={fadeUpVariant}
           custom={1}
         >
