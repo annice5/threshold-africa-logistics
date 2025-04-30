@@ -19,6 +19,12 @@ const fadeInUp = {
 };
 
 const ContactLanding = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Message sent to Threshold Africa Logistics!");
+  };
+
   return (
     <Element name = 'contact'>
       <section
@@ -44,7 +50,7 @@ const ContactLanding = () => {
           custom={1}
         >
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Get in Touch</h2>
-          <form className="space-y-5">
+          <form className="space-y-5 " onSubmit={handleSubmit}>
             <div>
               <label className="block text-sm font-medium mb-1">Full Name</label>
               <input

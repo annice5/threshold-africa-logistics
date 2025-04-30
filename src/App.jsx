@@ -11,6 +11,7 @@ import Partners from "./components/pages/partners"
 
 
 
+
 function App(){
 const router = createBrowserRouter([
   {
@@ -48,6 +49,7 @@ const router = createBrowserRouter([
 
 return(
   <RouterProvider router= {router}/>
+  
 )
 }
 export default App

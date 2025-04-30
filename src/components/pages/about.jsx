@@ -63,11 +63,11 @@ const About = () => {
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
         <div className="absolute inset-0 bg-black/60 z-0"></div>
-        <div className="absolute inset-0 flex flex-col justify-center items-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#EBFCFF] mb-4">
-            About Threshold Africa Logistics
+        <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#EBFCFF] mb-4">
+              About Threshold Africa Logistics
           </h1>
-        </div>
+       </div>
       </div>
 
       {/* Introduction Section */}
@@ -95,22 +95,22 @@ const About = () => {
         className="py-12 px-4 sm:px-6 lg:px-20 bg-[#0F214D] text-[#AAF1FF]"
       >
         <h2 className="text-3xl font-bold mb-6 text-center">Our History and Growth</h2>
-        <div className="flex flex-col md:flex-row justify-center items-start gap-10 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center text-center gap-10 max-w-6xl mx-auto">
           <div className="flex flex-col items-center">
             <Counter target={2009} className="text-5xl font-bold text-[#0A33E3]" />
-            <p className="text-center mt-2 text-gray-300">Founded in Ghana</p>
-          </div>
+              <p className="mt-2 text-gray-300">Founded in Ghana</p>
+           </div>
 
-          <div className="flex flex-col items-center">
-            <Counter target={2019} className="text-5xl font-bold text-[#0A33E3]" />
-            <p className="text-center mt-2 text-gray-300">Reincorporated with expanded focus</p>
-          </div>
+           <div className="flex flex-col items-center">
+             <Counter target={2019} className="text-5xl font-bold text-[#0A33E3]" />
+             <p className="mt-2 text-gray-300">Reincorporated with expanded focus</p>
+           </div>
 
-          <div className="flex flex-col items-center">
-            <div className="text-5xl font-bold text-[#0A33E3]">Present</div>
-            <p className="text-center mt-2 text-gray-300">Operating across Ghana & the Sahel</p>
+           <div className="flex flex-col items-center">
+           <div className="text-5xl font-bold text-[#0A33E3]">Present</div>
+             <p className="mt-2 text-gray-300">Operating across Ghana & the Sahel</p>
           </div>
-        </div>
+       </div>
       </motion.section>
 
       {/* Mission, Vision & Values Section */}
