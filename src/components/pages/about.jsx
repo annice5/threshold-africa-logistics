@@ -148,33 +148,33 @@ const About = () => {
 
       {/* Leadership Team Section */}
       <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="py-12 px-4 sm:px-6 lg:px-20 bg-[#EBFCFF] text-gray-700"
-      >
-        <h2 className="text-3xl font-bold mb-6 text-center text-[#0F214D]">Our Leadership</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-          <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">
-            <img src={leadershipImageOne} alt="Dr. Tia Ibrahim Braimah" className="w-32 h-32 object-cover rounded-full mb-4 shadow-lg" />
-            <h3 className="text-2xl font-semibold mb-2">Dr. Tia Ibrahim Braimah</h3>
-            <p className="text-sm text-[#0A33E3] mb-4">Chairman / President</p>
-            <p className="text-base leading-relaxed">
-              Experienced engineer and entrepreneur with global exposure, delivering strategic leadership across mining, logistics, and energy sectors.
-            </p>
-          </div>
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="py-12 px-4 sm:px-6 lg:px-20 bg-[#EBFCFF] text-gray-700 text-center"
+>
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl font-bold mb-6 text-[#0F214D]">Our CEO</h2>
 
-          <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">
-            <img src={leadershipImageTwo} alt="Joseph Kwadwo Afari-Yeboah" className="w-32 h-32 object-cover rounded-full mb-4 shadow-lg" />
-            <h3 className="text-2xl font-semibold mb-2">Joseph Kwadwo Afari-Yeboah</h3>
-            <p className="text-sm text-[#0A33E3]">CEO / Business Development</p>
-            <p className="text-base leading-relaxed">
-              Project management expert with over 20 years of experience in logistics, business strategy, and the petroleum supply chain across West Africa.
-            </p>
-          </div>
-        </div>
-      </motion.section>
+    <div className="flex justify-center">
+      <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center max-w-md">
+        <img
+          src={leadershipImageTwo}
+          alt="Joseph Kwadwo Afari-Yeboah"
+          className="w-32 h-32 object-cover rounded-full mb-4 shadow-lg"
+        />
+        <h3 className="text-2xl font-semibold mb-2">Joseph Kwadwo Afari-Yeboah</h3>
+        <p className="text-sm text-[#0A33E3]">CEO / Business Development</p>
+        <p className="text-base leading-relaxed">
+          Project management expert with over 20 years of experience in logistics,
+          business strategy, and the petroleum supply chain across West Africa.
+        </p>
+      </div>
+    </div>
+  </div>
+</motion.section>
+
 
       {/* What Makes Us Different Section */}
       <motion.section

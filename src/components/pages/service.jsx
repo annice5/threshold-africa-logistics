@@ -89,8 +89,7 @@ const Service = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-center text-gray-100 text-base sm:text-lg">
           <span className="bg-[#2BA3EC] px-6 py-2 rounded-full">Petroleum & Petrochemicals</span>
-          <span className="bg-[#2BA3EC] px-6 py-2 rounded-full">Mining & Extractives</span>
-          <span className="bg-[#2BA3EC] px-6 py-2 rounded-full">Manufacturing</span>
+          <span className="bg-[#2BA3EC] px-6 py-2 rounded-full">Industrial Support Services</span>
           <span className="bg-[#2BA3EC] px-6 py-2 rounded-full">Commodity Trading</span>
         </div>
       </motion.section>

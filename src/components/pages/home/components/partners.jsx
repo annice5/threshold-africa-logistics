@@ -6,8 +6,12 @@ import ecgLogo from '../../../../assets/images/ecgLogo.png';
 import ildo from '../../../../assets/images/ildo.png';
 import jse from '../../../../assets/images/jse.png';
 import partners from '../../../../assets/images/partners.jpeg';
+import petromoom from '../../../../assets/images/petromoom.png';
+import farlaMedical from '../../../../assets/images/farlaMedical.jpeg';
+import mausAerosol from '../../../../assets/images/mausAerosol.jpg';
 
-const logos = [ecgLogo, ildo, jse];
+
+const logos = [ecgLogo, ildo, jse, petromoom, farlaMedical, mausAerosol];
 
 const Partners = () => {
   return (

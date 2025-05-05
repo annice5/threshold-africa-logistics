@@ -19,7 +19,7 @@ const fadeInUp = {
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#EBFCFF] text-white py-12 px-4 overflow-hidden">
+    <footer className="relative bg-[#c0dadf] text-white py-12 px-4 overflow-hidden">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30 z-0"></div>
 

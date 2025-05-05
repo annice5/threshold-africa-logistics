@@ -5,29 +5,18 @@ import { motion } from 'framer-motion';
 
 const sectors = [
   {
-    title: 'Petroleum',
+    title: 'Petroleum and Petrochemicals',
     icon: <Flame className="h-6 w-6" />,
   },
   {
-    title: 'Mining',
+    title: 'Industrial Support Services',
     icon: <Hammer className="h-6 w-6" />,
   },
   {
-    title: 'Construction',
+    title: 'Commodity Training ',
     icon: <Building2 className="h-6 w-6" />,
   },
-  {
-    title: 'Manufacturing',
-    icon: <Factory className="h-6 w-6" />,
-  },
-  {
-    title: 'Telecommunication',
-    icon: <Signal className="h-6 w-6" />,
-  },
-  {
-    title: 'Retail & FMCG',
-    icon: <ShoppingBag className="h-6 w-6" />,
-  },
+  
 ];
 
 const MarketSectors = () => {

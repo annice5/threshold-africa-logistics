@@ -24,18 +24,8 @@ const MarketSector = () => {
       description:
         "Supplying PMS, AGO, bitumen, and lubricants through strategic refinery partnerships in the Gulf, UAE, and Iran.",
     },
-    {
-      name: "Mining & Extractives",
-      icon: <Building2 className="text-[#0B5FB0] w-10 h-10 mb-3" />,
-      description:
-        "Providing logistics, mechanical tools, and mining chemicals like sodium cyanide to extractive industry clients.",
-    },
-    {
-      name: "Transport & Ports",
-      icon: <Truck className="text-[#0B5FB0] w-10 h-10 mb-3" />,
-      description:
-        "Haulage and logistics support for port operations and regional transport across Ghana and the Sahel.",
-    },
+   
+   
     {
       name: "Commodity Trading",
       icon: <ShoppingBag className="text-[#0B5FB0] w-10 h-10 mb-3" />,
@@ -46,14 +36,9 @@ const MarketSector = () => {
       name: "Industrial Support Services",
       icon: <Boxes className="text-[#0B5FB0] w-10 h-10 mb-3" />,
       description:
-        "Supplying fire safety equipment, engineering tools, and support for energy and industrial clients.",
+        "Supplying fire safety equipment, engineering tools,mining supplies(Sodium Cyanide) and support for energy and industrial clients.",
     },
-    {
-      name: "Manufacturing & Energy",
-      icon: <Factory className="text-[#0B5FB0] w-10 h-10 mb-3" />,
-      description:
-        "Logistics and procurement support tailored for manufacturing, energy production, and infrastructure projects.",
-    },
+    
   ];
 
   return (
