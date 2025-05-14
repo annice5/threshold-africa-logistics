@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Flame, Factory, Building2, ShoppingBag, Truck, Boxes } from "lucide-react";
-import serviceImage from '../../assets/images/serviceImage.jpg';
-import aboutSlideOne from '../../assets/images/aboutSlideOne.jpg';
+import charcoal from '../../assets/images/charcoal.jpg';
+import heroThree from '../../assets/images/heroThree.jpg';
+import sugarBag from '../../assets/images/sugarBag.jpg';
 
 const MarketSector = () => {
-  const images = [aboutSlideOne, serviceImage];
+  const images = [charcoal, heroThree, sugarBag ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ const MarketSector = () => {
       name: "Commodity Trading",
       icon: <ShoppingBag className="text-[#0B5FB0] w-10 h-10 mb-3" />,
       description:
-        "Distribution of sugar, rice, oil, and disposable medical supplies to regional markets in West Africa.",
+        " sugar, rice, oil, and charcoal",
     },
     {
       name: "Industrial Support Services",
@@ -52,12 +53,10 @@ const MarketSector = () => {
         className="relative w-full h-[50vh] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
-        <div className="absolute inset-0 bg-black/60 z-0"></div>
+        <div className="absolute inset-0 bg-black/50 z-0"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-center px-4 sm:px-6 lg:px-20">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#EFEDCE]">Market Sectors</h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl">
-            Supporting key industries across West Africa with customized logistics and supply solutions.
-          </p>
+          
         </div>
       </motion.section>
 
@@ -69,7 +68,7 @@ const MarketSector = () => {
         viewport={{ once: true }}
         className="py-16 px-4 sm:px-6 lg:px-20 bg-[#0F214D]"
       >
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#AAF1FF]">Industries We Serve</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-[#AAF1FF]">Our Market Sectors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {sectors.map((sector, index) => (
             <div

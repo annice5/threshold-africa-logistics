@@ -55,8 +55,8 @@ const Footer = () => {
         {/* Column 3: Contact */}
         <motion.div variants={fadeInUp} custom={3}>
           <h4 className="font-semibold mb-4 text-lg text-white">Contact</h4>
-          <p className="text-shadow-md font-thin text-white">3rd Floor Springfield Building, Tema, Ghana</p>
-          <p className="text-shadow-md font-thin mt-2 text-white">+233 20 921 9910</p>
+          <p className="text-shadow-md font-thin text-white">3rd Floor Springfield Building Meridian, Tema.</p>
+          <p className="text-shadow-md font-thin mt-2 text-white">+233-20-9219910 / +233-302-941463</p>
           <p className="text-shadow-md font-thin text-white">thresholdafrica.gh@outlook.com</p>
         </motion.div>
       </motion.div>

@@ -1,43 +1,48 @@
 import React from 'react';
-import { Truck, Warehouse, PackageCheck, Fuel, ShipWheel, Boxes, Settings } from 'lucide-react';
+import { Truck, Warehouse, PackageCheck, Fuel, ShipWheel, Boxes, Settings, FireExtinguisher } from 'lucide-react';
 import service from '../../../../assets/images/service.png';
 import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'Transportation',
-    icon: <Truck className="h-6 w-6" />,
-    description: 'Safe and efficient cargo delivery across West Africa.',
+    title: 'Freight Forwarding',
+    icon: <ShipWheel className="h-6 w-6" />
+   
   },
   {
-    title: 'Warehousing',
-    icon: <Warehouse className="h-6 w-6" />,
-    description: 'Secure storage facilities with real-time inventory monitoring.',
+    title: 'Customs Clearance',
+    icon: <Settings className="h-6 w-6" />
+   
   },
   {
-    title: 'Clearing & Forwarding',
-    icon: <PackageCheck className="h-6 w-6" />,
-    description: 'Hassle-free clearance and forwarding at all ports and borders.',
+    title: 'Purchasing and Supply',
+    icon: <PackageCheck className="h-6 w-6" />
+   
   },
   {
-    title: 'Fleet Management',
-    icon: <Settings className="h-6 w-6" />,
-    description: 'Reliable fleet operations for optimized delivery performance.',
+    title: 'Warehousing and Transit',
+    icon:  <Warehouse className="h-6 w-6" />
+    
   },
   {
-    title: 'Customs Brokerage',
-    icon: <ShipWheel className="h-6 w-6" />,
-    description: 'Expert handling of customs documentation and processes.',
+    title: 'Transport and Haulage',
+    icon: <Truck className="h-6 w-6" />
+    
   },
   {
-    title: 'Fuel Haulage',
-    icon: <Fuel className="h-6 w-6" />,
-    description: 'Specialized transport of petroleum products across the region.',
+    title: 'Commodity Trading',
+    icon: <Boxes className="h-6 w-6" />
+    
   },
   {
-    title: 'Container Haulage',
-    icon: <Boxes className="h-6 w-6" />,
-    description: 'Smooth inland container movement with tracking systems.',
+    title: 'Petroleum and Petrolchemical Supplies',
+    icon:  <Fuel className="h-6 w-6" />
+   
+  },
+   {
+    title: 'Mining Support Services',
+    icon: <FireExtinguisher className="h-6 w-6"/>
+    
   },
 ];
 
@@ -78,7 +83,7 @@ const Services = () => {
                 {service.icon}
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">{service.title}</h3>
-              <p className="text-gray-300 text-sm sm:text-base">{service.description}</p>
+             
             </motion.div>
           ))}
         </div>

@@ -4,8 +4,7 @@ import { SquareCheckBig } from "lucide-react";
 
 import aboutSlideOne from '../../assets/images/aboutSlideOne.jpg';
 import aboutSlideTwo from '../../assets/images/aboutSlideTwo.jpg';
-import leadershipImageOne from '../../assets/images/leadershipImageOne.jpeg';
-import leadershipImageTwo from '../../assets/images/leadershipImageTwo.jpeg';
+import leadershipImage from '../../assets/images/leadershipImage.jpg';
 import associationLogoOne from '../../assets/images/associationLogoOne.png';
 import associationLogoTwo from '../../assets/images/associationLogoTwo.jpg';
 import associationLogoThree from '../../assets/images/associationLogoThree.png';
@@ -160,9 +159,9 @@ const About = () => {
     <div className="flex justify-center">
       <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center max-w-md">
         <img
-          src={leadershipImageTwo}
+          src={leadershipImage}
           alt="Joseph Kwadwo Afari-Yeboah"
-          className="w-32 h-32 object-cover rounded-full mb-4 shadow-lg"
+          className="w-36 h-36 object-cover rounded-full mb-4 shadow-lg"
         />
         <h3 className="text-2xl font-semibold mb-2">Joseph Kwadwo Afari-Yeboah</h3>
         <p className="text-sm text-[#0A33E3]">CEO / Business Development</p>

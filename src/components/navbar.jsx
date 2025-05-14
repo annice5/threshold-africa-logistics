@@ -77,7 +77,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-white font-bold text-2xl tracking-wider flex items-center gap-2">
           <img src={logo} alt="logo" className="w-11 h-11 rounded-full object-cover" />
-          <span>Threshold Africa.</span>
+          <span>Threshold Africa</span>
         </div>
 
         {/* Desktop Nav */}

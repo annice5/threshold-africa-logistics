@@ -96,11 +96,11 @@ const ContactLanding = () => {
           </p>
           <div className="mb-4">
             <p className="font-semibold text-white">Address:</p>
-            <p>3rd Floor Springfield Building, Community One, Tema, Ghana</p>
+            <p>3rd Floor Springfield Building Meridian, Tema.</p>
           </div>
           <div className="mb-4">
             <p className="font-semibold text-white">Phone:</p>
-            <p>+233 20 921 9910</p>
+            <p>+233-20-9219910 / +233-302-941463</p>
           </div>
           <div className="mb-4">
             <p className="font-semibold text-white">Email:</p>

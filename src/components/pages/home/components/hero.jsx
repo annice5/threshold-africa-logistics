@@ -2,7 +2,7 @@ import React from "react";
 import heroOne from "../../../../assets/images/heroOne.jpg";
 import heroTwo from '../../../../assets/images/heroTwo.jpg';
 import heroThree from '../../../../assets/images/heroThree.jpg';
-import heroFour from '../../../../assets/images/heroFour.jpg';
+import charcoal from '../../../../assets/images/charcoal.jpg';
 import  { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const images = [heroOne, heroTwo, heroThree, heroFour]; // Add your images here
+  const images = [heroOne, heroThree, heroTwo, charcoal  ]; // Add your images here
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,7 +33,7 @@ const Hero = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      <div className="absolute inset-0 bg-black/50 z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          Efficient Logistics Across West Africa
+          WE ARE SOLUTION
         </motion.h1>
 
         {/* Text Animation */}
